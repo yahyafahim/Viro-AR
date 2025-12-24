@@ -1,80 +1,13 @@
 PODS:
-  - ARCore/Base (1.51.0):
-    - GoogleDataTransport (< 11.0, >= 10.0)
-    - nanopb (< 3.30911.0, >= 3.30908.0)
-  - ARCore/CloudAnchors (1.51.0):
-    - ARCore/GARSession (~> 1.51)
-    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
-    - nanopb (< 3.30911.0, >= 3.30908.0)
-  - ARCore/GARSession (1.51.0):
-    - ARCore/Base (~> 1.51)
-    - Firebase/RemoteConfig (>= 11.0)
-    - nanopb (< 3.30911.0, >= 3.30908.0)
-  - ARCore/Geospatial (1.51.0):
-    - ARCore/GARSession (~> 1.51)
-  - ARCore/Semantics (1.51.0):
-    - ARCore/GARSession (~> 1.51)
-    - ARCore/TFShared (~> 1.51)
-  - ARCore/TFShared (1.51.0):
-    - ARCore/Base (~> 1.51)
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
   - fast_float (8.0.0)
   - FBLazyVector (0.81.5)
-  - Firebase/CoreOnly (12.5.0):
-    - FirebaseCore (~> 12.5.0)
-  - Firebase/RemoteConfig (12.5.0):
-    - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 12.5.0)
-  - FirebaseABTesting (12.5.0):
-    - FirebaseCore (~> 12.5.0)
-  - FirebaseCore (12.5.0):
-    - FirebaseCoreInternal (~> 12.5.0)
-    - GoogleUtilities/Environment (~> 8.1)
-    - GoogleUtilities/Logger (~> 8.1)
-  - FirebaseCoreInternal (12.5.0):
-    - "GoogleUtilities/NSData+zlib (~> 8.1)"
-  - FirebaseInstallations (12.5.0):
-    - FirebaseCore (~> 12.5.0)
-    - GoogleUtilities/Environment (~> 8.1)
-    - GoogleUtilities/UserDefaults (~> 8.1)
-    - PromisesObjC (~> 2.4)
-  - FirebaseRemoteConfig (12.5.0):
-    - FirebaseABTesting (~> 12.5.0)
-    - FirebaseCore (~> 12.5.0)
-    - FirebaseInstallations (~> 12.5.0)
-    - FirebaseRemoteConfigInterop (~> 12.5.0)
-    - FirebaseSharedSwift (~> 12.5.0)
-    - GoogleUtilities/Environment (~> 8.1)
-    - "GoogleUtilities/NSData+zlib (~> 8.1)"
-  - FirebaseRemoteConfigInterop (12.5.0)
-  - FirebaseSharedSwift (12.5.0)
   - fmt (11.0.2)
   - glog (0.3.5)
-  - GoogleDataTransport (10.1.0):
-    - nanopb (~> 3.30910.0)
-    - PromisesObjC (~> 2.4)
-  - GoogleUtilities/Environment (8.1.0):
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/Logger (8.1.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Privacy
-  - "GoogleUtilities/NSData+zlib (8.1.0)":
-    - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (8.1.0)
-  - GoogleUtilities/UserDefaults (8.1.0):
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Privacy
-  - GTMSessionFetcher/Core (3.5.0)
   - hermes-engine (0.81.5):
     - hermes-engine/Pre-built (= 0.81.5)
   - hermes-engine/Pre-built (0.81.5)
-  - nanopb (3.30910.0):
-    - nanopb/decode (= 3.30910.0)
-    - nanopb/encode (= 3.30910.0)
-  - nanopb/decode (3.30910.0)
-  - nanopb/encode (3.30910.0)
-  - PromisesObjC (2.4.0)
   - RCT-Folly (2024.11.18.00):
     - boost
     - DoubleConversion
@@ -2498,7 +2431,7 @@ PODS:
   - SocketRocket (0.7.1)
   - ViroKit (1.0):
     - React
-  - ViroReact (2.50.0):
+  - ViroReact (2.50.1):
     - React-Core
     - React-Fabric
     - React-FabricComponents
@@ -2506,9 +2439,6 @@ PODS:
   - Yoga (0.0.0)
 
 DEPENDENCIES:
-  - ARCore/CloudAnchors (~> 1.51.0)
-  - ARCore/Geospatial (~> 1.51.0)
-  - ARCore/Semantics (~> 1.51.0)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - fast_float (from `../node_modules/react-native/third-party-podspecs/fast_float.podspec`)
@@ -2590,20 +2520,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - ARCore
-    - Firebase
-    - FirebaseABTesting
-    - FirebaseCore
-    - FirebaseCoreInternal
-    - FirebaseInstallations
-    - FirebaseRemoteConfig
-    - FirebaseRemoteConfigInterop
-    - FirebaseSharedSwift
-    - GoogleDataTransport
-    - GoogleUtilities
-    - GTMSessionFetcher
-    - nanopb
-    - PromisesObjC
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -2762,27 +2678,13 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  ARCore: 510a91dbad2b4c26dca7073a1dc61a2b25a3392d
   boost: 7e761d76ca2ce687f7cc98e698152abd03a18f90
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
   fast_float: b32c788ed9c6a8c584d114d0047beda9664e7cc6
   FBLazyVector: 5beb8028d5a2e75dd9634917f23e23d3a061d2aa
-  Firebase: f51524e7ea4aa63c6fdaa32543f4c2e8c0cda770
-  FirebaseABTesting: e1e898b0820bd158af13113a54cfebb480349a1b
-  FirebaseCore: dcadd790e70df14d689525ee56657bf4a6305b54
-  FirebaseCoreInternal: 67715d38ba28c92c10750de9367f4f2120d763cf
-  FirebaseInstallations: a3208cb8ada31c7cc3e69d8fa9653561d9861169
-  FirebaseRemoteConfig: 5b76b9846ea1606e255b9f30058c685725203f90
-  FirebaseRemoteConfigInterop: 8d988e0ee2fd9b974dd4aaa78fc0aedf9860b1c3
-  FirebaseSharedSwift: 9a96c0a083dad9cf12b9b2787a1fc9dda6470860
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
-  GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
-  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
-  GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
-  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RCT-Folly: 846fda9475e61ec7bcbf8a3fe81edfcaeb090669
   RCTDeprecation: 5eb1d2eeff5fb91151e8a8eef45b6c7658b6c897
   RCTRequired: cebcf9442fc296c9b89ac791dfd463021d9f6f23
@@ -2850,10 +2752,10 @@ SPEC CHECKSUMS:
   RNGestureHandler: b8d2e75c2e88fc2a1f6be3b3beeeed80b88fa37d
   RNScreens: dbde707184672519af1d95dc7c6e5277996921bf
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  ViroKit: d596b89e48ff6e7fc45b7116eae891a30b52981d
-  ViroReact: dbd0d4dbe097eb8dda824ad2a8d506cb71d920bd
+  ViroKit: c9c10b089da06a10bb357079729cd7181161b3f8
+  ViroReact: ed1d609a48a30e3a2a09777239446d188bf8d8c2
   Yoga: cc4a6600d61e4e9276e860d4d68eebb834a050ba
 
-PODFILE CHECKSUM: acc59b12f1b948e0b96049b9a35344dc25119f95
+PODFILE CHECKSUM: 9e3b307e933103bca3779bf3bd75d2f00e55c6e5
 
 COCOAPODS: 1.16.2

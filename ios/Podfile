@@ -16,15 +16,10 @@ end
 
 target 'ViroAR' do
   config = use_native_modules!
-  use_frameworks! :linkage => :dynamic
+  use_frameworks! :linkage => :static
 
   pod 'ViroReact', :path => '../node_modules/@reactvision/react-viro/ios/'
   pod 'ViroKit', :path => '../node_modules/@reactvision/react-viro/ios/dist/ViroRenderer/'
-  
-  # Add ARCore pods
-  pod 'ARCore/CloudAnchors', '~> 1.51.0'
-  pod 'ARCore/Geospatial', '~> 1.51.0'
-  pod 'ARCore/Semantics', '~> 1.51.0' 
 
   use_react_native!(
     :path => config[:reactNativePath],

@@ -22,8 +22,6 @@
 		<string>????</string>
 		<key>CFBundleVersion</key>
 		<string>$(CURRENT_PROJECT_VERSION)</string>
-		<key>GARAPIKey</key>
-		<string>GARAPIKey goes here</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true />
 		<key>NSAppTransportSecurity</key>

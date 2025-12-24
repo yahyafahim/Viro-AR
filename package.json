@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@reactvision/react-viro": "^2.50.0",
+    "@reactvision/react-viro": "^2.50.1",
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-gesture-handler": "^2.28.0",

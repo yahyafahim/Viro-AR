@@ -1,6 +1,9 @@
 import {
+  Viro3DObject,
+  ViroAmbientLight,
   ViroARScene,
   ViroARSceneNavigator,
+  ViroOmniLight,
   ViroText,
   ViroTrackingReason,
   ViroTrackingStateConstants,
@@ -27,6 +30,26 @@ const HelloWorldSceneAR = () => {
         scale={[0.5, 0.5, 0.5]}
         position={[0, 0, -1]}
         style={styles.helloWorldTextStyle}
+      />
+
+      <ViroAmbientLight color={'#FFFFFF'} />
+      <ViroOmniLight
+        intensity={30}
+        position={[2, 2, 0.4]}
+        color={'#FFFFFF'}
+        attenuationStartDistance={0}
+        attenuationEndDistance={20}
+      />
+
+      <Viro3DObject
+        source={require('./resources/start_flag.glb')}
+        position={[0, 0, 0]}
+        scale={[1, 1, 1]}
+        type="GLB"
+        lightReceivingBitMask={3}
+        shadowCastingBitMask={2}
+        onLoadEnd={() => console.log('3D loaded')}
+        onError={err => console.log('3D load error:', err)}
       />
     </ViroARScene>
   );

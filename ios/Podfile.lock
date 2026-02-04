@@ -2431,7 +2431,7 @@ PODS:
   - SocketRocket (0.7.1)
   - ViroKit (1.0):
     - React
-  - ViroReact (2.50.1):
+  - ViroReact (2.51.0):
     - React-Core
     - React-Fabric
     - React-FabricComponents
@@ -2753,9 +2753,9 @@ SPEC CHECKSUMS:
   RNScreens: dbde707184672519af1d95dc7c6e5277996921bf
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   ViroKit: c9c10b089da06a10bb357079729cd7181161b3f8
-  ViroReact: ed1d609a48a30e3a2a09777239446d188bf8d8c2
+  ViroReact: 9899af40ee9363cd1e285d2f1feaee0c9b36fa91
   Yoga: cc4a6600d61e4e9276e860d4d68eebb834a050ba
 
-PODFILE CHECKSUM: 9e3b307e933103bca3779bf3bd75d2f00e55c6e5
+PODFILE CHECKSUM: ac790d93dea58486381ecdcaa69dfa75dd3c95bd
 
 COCOAPODS: 1.16.2

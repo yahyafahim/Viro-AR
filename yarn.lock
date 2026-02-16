@@ -1800,10 +1800,10 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
-"@reactvision/react-viro@^2.51.0":
-  version "2.51.0"
-  resolved "https://registry.yarnpkg.com/@reactvision/react-viro/-/react-viro-2.51.0.tgz#9a7c82fdf29ac03d1dc53b0041881c3897e42ffe"
-  integrity sha512-9X+0sobrY730kWGMNToc969QFR/hP3QMYFH9MPBe7TYbuCqKmPlzTfTlaLiqGt8DiL8qL2znLCsE0z4IiK6y/w==
+"@reactvision/react-viro@^2.52.0":
+  version "2.52.0"
+  resolved "https://registry.yarnpkg.com/@reactvision/react-viro/-/react-viro-2.52.0.tgz#4825dc6c6cf1cb257406f978bb9686503ad6fbef"
+  integrity sha512-hgBJMdhJytZ6Xd9tjYyAXm1uoChgm9FPMDEH0G0VwLZi/7c1NGvHotsAfE9bjqs/o+aQLvNu6tPpMasjhvc/cA==
   dependencies:
     "@expo/config-plugins" "^9.0.14"
     react "~19.1.0"

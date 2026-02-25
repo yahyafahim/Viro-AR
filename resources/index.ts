@@ -1,5 +1,6 @@
 const assets = {
-  ironManUrl: 'to be added',
+  ironManUrl:
+    'https://github.com/yahyafahim/Viro-AR/blob/main/resources/IronMan.obj',
   ironMan: require('./IronMan.obj'),
 };
 

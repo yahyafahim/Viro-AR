@@ -21,11 +21,6 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        externalNativeBuild {
-            cmake {
-                cppFlags "-fexceptions", "-frtti", "-std=c++20", "-Wno-error" 
-            }
-        }
     }
     signingConfigs {
         debug {

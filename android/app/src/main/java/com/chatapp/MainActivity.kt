@@ -1,5 +1,6 @@
 package com.example.ViroAR
 
+import android.os.Bundle // Add this import at the top
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -19,4 +20,11 @@ class MainActivity : ReactActivity() {
    */
   override fun createReactActivityDelegate(): ReactActivityDelegate =
       DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+      
+  
+  override fun onCreate(savedInstanceState: Bundle?) {
+        // Passing null here is what prevents the "Permission Change" crash
+        // by telling Android to ignore the previous state.
+        super.onCreate(null) 
+    }
 }

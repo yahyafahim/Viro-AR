@@ -16,16 +16,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* ViroAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViroAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ViroAR/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ViroAR/Info.plist; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ViroAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViroAR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ViroAR/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ViroAR/Info.plist"; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ViroAR/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		315EC1002EEAFB30006C73E3 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		319F00ED2EE84BBF00625DC2 /* ViroKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViroKit.framework; path = "../node_modules/@reactvision/react-viro/ios/dist/ViroRenderer/ViroKit.framework"; sourceTree = "<group>"; };
 		6FF4C15593B582CEEC2E95D1 /* Pods_ViroAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViroAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ViroAR/AppDelegate.swift; sourceTree = "<group>"; };
 		772CACBB7E146AF740893183 /* Pods-ViroAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroAR.release.xcconfig"; path = "Target Support Files/Pods-ViroAR/Pods-ViroAR.release.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ViroAR/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "ViroAR/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		DD66CB4DE955307414F23A6F /* Pods-ViroAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroAR.debug.xcconfig"; path = "Target Support Files/Pods-ViroAR/Pods-ViroAR.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
-			name = ViroAR;
+			name = "ViroAR";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -123,8 +123,8 @@
 			);
 			dependencies = (
 			);
-			name = ViroAR;
-			productName = ViroAR;
+			name = "ViroAR";
+			productName = "ViroAR";
 			productReference = 13B07F961A680F5B00A75B9A /* ViroAR.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -268,7 +268,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QX22P8Z577;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = ViroAR/Info.plist;
+				INFOPLIST_FILE = "ViroAR/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "ViroAR";
 				INFOPLIST_KEY_CFBundleDisplayName = ViroAR;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -283,7 +284,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walking.ios.uat;
-				PRODUCT_NAME = ViroAR;
+				PRODUCT_NAME = "ViroAR";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -298,7 +299,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QX22P8Z577;
-				INFOPLIST_FILE = ViroAR/Info.plist;
+				INFOPLIST_FILE = "ViroAR/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "ViroAR";
 				INFOPLIST_KEY_CFBundleDisplayName = ViroAR;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -313,7 +315,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.walking.ios.uat;
-				PRODUCT_NAME = ViroAR;
+				PRODUCT_NAME = "ViroAR";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

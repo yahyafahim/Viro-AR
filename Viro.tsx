@@ -4,7 +4,6 @@ import {
   ViroARScene,
   ViroARSceneNavigator,
   ViroOmniLight,
-  ViroText,
   ViroTrackingReason,
   ViroTrackingStateConstants,
 } from '@reactvision/react-viro';
@@ -56,13 +55,6 @@ const HelloWorldSceneAR = () => {
 
   return (
     <ViroARScene onTrackingUpdated={onInitialized}>
-      <ViroText
-        text={text}
-        position={[0, 0, -1]}
-        scale={[0.5, 0.5, 0.5]}
-        style={styles.helloWorldTextStyle}
-      />
-
       <ViroAmbientLight color={'#FFFFFF'} />
       <ViroOmniLight
         intensity={30}
@@ -74,10 +66,9 @@ const HelloWorldSceneAR = () => {
 
       {asset && (
         <Viro3DObject
-          // type="GLB"
-          // source={{ uri: asset }}
           type="OBJ"
-          source={assets.ironMan}
+          source={{ uri: asset }}
+          // source={assets.ironMan}
           position={[0, 0, -0.5]}
           shadowCastingBitMask={2}
           lightReceivingBitMask={3}
